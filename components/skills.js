@@ -6,12 +6,21 @@ import Header from './header';
 import Footer from './footer';
 import SkillsBox from './skills-box';
 import { Motion, spring, presets } from 'react-motion';
+import { preload } from './helpers';
 
 class Skills extends Component {
 
 	componentDidMount = () => {
 		window.addEventListener('keyup', this.onKeyUp);
 		document.getElementById('app').style.backgroundColor = '#02779E';
+		preload([
+			require('../images/brandi-thumbnail.jpg'),
+			require('../images/flickr-thumbnail.jpg'),
+			require('../images/hydra-thumbnail.jpg'),
+			require('../images/joam-thumbnail.jpg'),
+			require('../images/reddit-thumbnail.jpg'),
+			require('../images/resto-thumbnail.jpg'),
+		]);
 	}
 
 	componentWillUnmount = () => {

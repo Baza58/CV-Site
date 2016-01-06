@@ -6,12 +6,21 @@ import Footer from './footer';
 import Linker from './linker';
 import { Link } from 'react-router';
 import { Motion, spring, presets } from 'react-motion';
+import { preload } from './helpers';
 
 class Education extends Component {
 
 	componentDidMount = () => {
 		window.addEventListener('keyup', this.onKeyUp);
 		document.getElementById('app').style.backgroundColor = '#3abbb2';
+		preload([
+			require('../images/html5-logo.svg'),
+			require('../images/css3-logo.svg'),
+			require('../images/js-logo.svg'),
+			require('../images/react-logo.svg'),
+			require('../images/git-logo.svg'),
+			require('../images/photoshop-logo.jpg'),
+		]);
 	}
 
 	componentWillUnmount = () => {

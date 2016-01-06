@@ -4,12 +4,16 @@ import history from './history';
 import Footer from './footer';
 import Linker from './linker';
 import { Motion, spring, presets } from 'react-motion';
+import { preload } from './helpers';
 
 class App extends Component {
 
 	componentDidMount = () => {
 		window.addEventListener('keyup', this.onKeyUp);
 		document.getElementById('app').style.backgroundColor = '#00a0b0';
+		preload([
+			require('../images/skola.jpeg')
+		]);
 	}
 
 	componentWillUnmount = () => {
