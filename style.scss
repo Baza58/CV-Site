@@ -349,7 +349,9 @@ img {
 	left: 0px;
 	opacity: 0.9;
 }
-
+.form-error-textarea {
+	bottom: -13px;
+}
 .form-submit:hover {
 	background-color: rgba(0,0,0,0.3);
 }
@@ -360,7 +362,8 @@ img {
 	left: 0px;
 	width: calc(100% - 40px);
 	margin: 0px 20px;
-	display: block;
+	display: flex;
+	justify-content: flex-end;
 	height: 70px;
 }
 .footer-img {

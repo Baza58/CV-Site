@@ -105,7 +105,7 @@ class Form extends Component {
 			<div className="form-field">
 				<label htmlFor="text">Zpráva</label>
 				<textarea type="text" id="text" name="message" ref={node => this.message = node} onBlur={this.checkMessage} ></textarea>
-				{ this.state.messageError && <p className="form-error">Zpráva nesmí být prázdná</p> }	
+				{ this.state.messageError && <p className="form-error form-error-textarea">Zpráva nesmí být prázdná</p> }	
 			</div>
 			<button type="submit" className="form-submit" >Odeslat</button>
 			<p className="form-submit-text">{text}</p>
