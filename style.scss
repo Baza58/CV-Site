@@ -262,17 +262,15 @@ img {
 		font-weight: 500;
 	}
 }
+.contact-link-container {
+	margin-bottom: 10px;
+}
 .contact-link {
 	font-size: 1rem;
-	display: block;
-	margin-bottom: 10px;
 	font-weight: 700;
 	color: white;
 	&:hover {
 		text-decoration: underline;
-	}
-	&:last-of-type {
-		margin-bottom: 30px;	
 	}
 }
 .home-link {

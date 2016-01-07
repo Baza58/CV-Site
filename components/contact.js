@@ -45,8 +45,12 @@ class Contact extends Component {
 											<h2>Petr Bažout</h2>
 											<h2>Frontend web developer</h2>
 											<h2>+420 723 775 841</h2>
-											<a href="mailto:bazout.p@gmail.com" className="contact-link">bazout.p@gmail.com</a>
-											<a href="http://petrbazout.cz" className="contact-link">petrbazout.cz</a>
+											<div className="contact-link-container">
+												<a href="mailto:bazout.p@gmail.com" className="contact-link">bazout.p@gmail.com</a>
+											</div>
+											<div className="contact-link-container">
+												<a href="http://petrbazout.cz" target="_blank" className="contact-link">petrbazout.cz</a>
+											</div>
 										</div>
 										<Form />
 									</div>

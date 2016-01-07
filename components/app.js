@@ -42,7 +42,7 @@ class App extends Component {
 									<h2>Frontend web developer</h2>
 									<h2>9. 8. 1994</h2>
 									<h2>Praha 6</h2>
-									<a href="http://petrbazout.cz" className="home-link">petrbazout.cz</a>
+									<a href="http://petrbazout.cz" target="_blank" className="home-link">petrbazout.cz</a>
 								</div>
 							);
 						}}
